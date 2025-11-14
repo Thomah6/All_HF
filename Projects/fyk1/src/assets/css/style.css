@@ -1,0 +1,4 @@
+@import "tailwindcss";
+main{
+    min-height:100vh;
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  box-sizing: border-box;
+  margin: 0;
+}
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contact-container{
+    display: grid;
+    max-width: 1024px;
+    padding: 50px;
+    position: relative;
+    width: 100%;
+    /* background-color: aqua; */
+    justify-self: center;
+}
+.form>form input{
+display: block;
+width: 100%;
+border-radius: 7px;
+border: 1px solid gray;
+padding: 20px;
+margin: 15px 0px;
+}
+.form>form input:nth-child(4){
+    padding: 40px 10px;
+}
+.form>form input:nth-child(5){
+    color: white;
+    background-color: #ff0000;
+}
+.map{
+    margin-top: 20px;
+}
+header {
+        background-color: rgb(6, 48, 2);
+      }
+      header > div>div:first-of-type {
+        max-width: 1200px;
+        padding: 30px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+      }
+      header > div span {
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 25px;
+      }
+      .menu ul {
+        display: grid;
+        text-align: center;
+        margin-left: -50px;
+        list-style: none;
+        margin: auto;
+      }
+      .menu ul li {
+        margin: 10px;
+      }
+      .menu ul li:hover {
+        color: #ff0066;
+      }
+      #nav-icon1 img.ham {
+        width: 40px;
+        cursor: pointer;
+      }
+      #nav-icon1 img.hamcl {
+        width: 40px;
+        cursor: pointer;
+      }
+      .hamcl {
+        display: none;
+      }
+      .menu li a{
+        color: white;
+        text-decoration: none;
+      }
+      .menu2 li a{
+        color: white;
+        text-decoration: none;
+      }
+      .menu2 li a:hover{
+        color:#ff0066;
+      }
+      .menu {
+        height: -20px;
+        overflow: hidden;
+        transition: height .5s ease-in-out;
+        display: none;
+        color: white;
+      }
+      .menu2{
+          display: none;
+        
+
+        }
+@media screen and (min-width:1024px) {
+    .contact-container{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        gap: 20px;
+    }
+    .form,.map{
+        width: 50%;
+    }
+    .map{
+margin-top: 60px;
+    }
+    .contact{
+        width: 100%;
+
+    }
+
+    #nav-icon1{
+          display: none;
+        }
+        header>div{
+          position: relative;
+        }
+        .menu{
+          display: none;
+        }
+        header .menu2 ul{
+          display: flex;
+          flex-direction: zow;
+          list-style: none;
+        }
+        header .menu2 ul li{
+         margin: 10px;
+        }
+        .menu2{
+          display: block;
+          
+          color: white;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+          <div>
+            <div>
+              <span>Caree</span>
+            </div>
+            <div id="nav-icon1">
+             
+              <svg xmlns="http://www.w3.org/2000/svg" class="ham" id="ham" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="hamcl" id="hamcl"  height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </div>
+            <div class="menu2">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="menu" id="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="contact">
+            <div class="contact-container">
+             <div class="form">
+                 <h2>Contact Us</h2>
+                 <form action="" method="">
+                     <input type="text" placeholder="Your Name" name="name">
+                     <input type="number" placeholder="Phone Number" name="name">
+                     <input type="email" placeholder="Email" name="name">
+                     <input type="text" placeholder="Messsage" name="message">
+                     <input type="submit" value="Submit" class="submit">
+                 </form>
+             </div>
+             <div class="map">
+                 <iframe
+                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999364203884!2d2.2922926156740444!3d48.85837307928744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fda71c0d575%3A0x76f5dc0b44b4f271!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1622208092045!5m2!1sfr!2sfr"
+                   width="100%"
+                   height="400"
+                   style="border:0; border-radius: 12px;"
+                   allowfullscreen=""
+                   loading="lazy"
+                   referrerpolicy="no-referrer-when-downgrade"
+                 ></iframe>
+               </div>
+               
+            </div>
+         </section>
+      </main>
+   
+      <script>
+       
+  
+        const hamButton = document.getElementById("ham");
+  const hamclButton = document.getElementById("hamcl");
+  const menu = document.getElementById("menu");
+  
+  hamButton.addEventListener("click", function () {
+    menu.style.display = "block";
+    hamButton.style.display = "none";
+    hamclButton.style.display = "block";
+  
+    const fullHeight = menu.scrollHeight + "px";
+    menu.style.height = fullHeight;
+  });
+  
+  hamclButton.addEventListener("click", function () {
+    hamButton.style.display = "block";
+    hamclButton.style.display = "none";
+    menu.style.height = "0px";
+  
+    setTimeout(() => {
+      menu.style.display = "none";
+    }, 500); 
+  });
+  
+      </script>
+</body>
+</html>
